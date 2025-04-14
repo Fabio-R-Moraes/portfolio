@@ -1,0 +1,314 @@
+.header {
+  background: url('assets/rachuras.png') no-repeat top center ;
+    padding:20px;
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* estica para cobrir todo o espaço */
+  width: 100%;
+  padding: 0px; /* ajusta a altura conforme necessário */
+    text-align: center;  
+    height: 650px; 
+}
+body {
+    margin: 0;
+    background-color: #1c1a23;
+   }
+
+   .lalezar-regular {
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
+  .lekton-regular {
+    font-family: "Lekton", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lekton-bold {
+    font-family: "Lekton", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lekton-regular-italic {
+    font-family: "Lekton", monospace;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+
+   #logo {
+    width: 35%;
+    padding-top: 5%;
+  }
+
+   .nav-estilo1 {
+    position: relative;
+    overflow :hidden;
+    background-color: #1c1a23;
+
+   }
+   
+   .nav-estilo1 a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 5% 100px;
+    text-decoration: none;
+    font-family: "Lalezar";
+    font-size: 30px;
+   }
+   .nav-estilo1 a:hover {
+    background-color: #ffffff;
+    color: #1c1a23;
+    font-family: "Lalezar";
+    font-size: 30px;
+   }
+   
+   .nav-estilo1 .topnav-right {
+     float: right;
+     
+   }
+   
+   .nav-estilo1 .topnav-left {
+     float: left;
+   
+   }
+
+   h1 {
+    font-family: "Lalezar";
+    font-size: 30px;
+    text-align:center;
+    color:#ffffff;
+    padding-top: 50px;
+   }
+
+   #it {
+    padding-top: 5%;
+   }
+
+   .img-container {
+    width: calc(33.333% - 10px);
+    box-sizing: border-box;
+  }
+
+  .img-container img {
+    width: 100%;
+    display: block;
+  }
+
+  .clearfix {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  footer {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    color: #1c1a23;
+  }
+
+  .social-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  .social-icon {
+    width: 40px;
+  }
+  #foot {
+    text-align: center;
+    color: #1c1a23;
+    font-family: "Space Mono", monospace;
+    font-size: 15px;
+  }
+  
+
+  .nav-estilo2 {
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  
+  .nav-estilo2 a {
+    float: right;
+    color: #1c1a23;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Lalezar"
+  }
+  
+  .nav-estilo2 a:hover {
+    background-color: #1c1a23;
+    color: rgb(255, 255, 255);
+  }
+
+#logo2 {
+  margin-top: 5px;
+  width: 15%;
+}
+
+#foto {
+    float:left;
+    width: 400px;
+    height:600px;
+    margin: 50px;
+}
+
+p {
+  color:white;
+  font-family: "Lekton", monospace;
+ margin: 50px;
+ font-size: 25px;
+ text-align: center;
+}
+
+.sobre {
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.eu {
+  display: flex;
+  align-items: flex-start;
+}
+.social-row1 {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-auto-rows: auto auto;
+  justify-content: center;
+  gap: 20px 10px;
+  padding: 20px 0;
+  padding-bottom: 100px;
+}
+.img1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.img2 {
+  grid-column: 3;
+  grid-row: 1;
+}
+.img3 {
+  grid-column: 5;
+  grid-row: 1;
+}
+
+.img4 {
+  grid-column: 2;
+  grid-row: 2;
+}
+.img5 {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.social-icon1 {
+  width: 130px;
+  height: auto;
+}
+
+#cv {
+  width: 60%;
+  padding-left: 260px;
+  padding-bottom: 100px;
+  align-content: center;
+}
+
+#demo {
+  float:left;
+  width: 50%;
+}
+
+.form-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+.formulario {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  background-color: #1c1a23;
+  padding: 100px;
+  border-radius: 5px;
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 6px;
+  color: #ffffff;
+  font-family: "Space Mono", monospace;
+}
+
+.formulario input[type="text"],
+.formulario textarea,
+.formulario select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  margin-bottom: 15px;
+}
+
+input[type="submit"] {
+  background-color: #ffffff;
+  color: #1c1a23;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Space Mono", monospace;
+}
+
+.side-image {
+  width: 350px;
+  max-width: 100%;
+  height: auto;
+  padding: -11px;
+}
+
+/* Responsivo */
+@media screen and (max-width: 800px) {
+  .form-image-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .side-image {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("assets/rachuras.png");
+
+  /* Set a specific height */
+  min-height: 650px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
