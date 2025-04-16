@@ -1,13 +1,12 @@
-{% include 'portfolio/partials/head.html' %}
-<body>
-  {% include 'portfolio/partials/header.html' %}
-  <div class="search-container">
-    <div class="container">
-      <form action="" class="search-form">
-        <input type="search" class="search-input" name="search">
-        <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
-      </form>
+{% extends 'portfolio/partials/base.html' %}
+{% block titulo %}Home | {% endblock %}
+  {% block conteudo %}
+    <div class="main-content main-content-list container">
+      {% include 'portfolio/partials/product.html' %}
+      {% include 'portfolio/partials/product.html' %}
+      {% include 'portfolio/partials/product.html' %}
+      {% include 'portfolio/partials/product.html' %}
+      {% include 'portfolio/partials/product.html' %}
+      {% include 'portfolio/partials/product.html' %}
     </div>
-  </div>
-</body>
-</html>
+  {% endblock %}
