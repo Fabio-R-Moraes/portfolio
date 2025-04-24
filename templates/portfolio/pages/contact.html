@@ -20,18 +20,23 @@
     <div class="form-image-wrapper">
       <img class="side-image" src="{% static 'portfolio/img/raz.png' %}" alt="Imagem esquerda">
     
-      <form action="processa-form.php" target="_blank" method="post" class="formulario">
+      <form action="{% url 'contact' %}" method="post" class="formulario" autocomplete="off">
+        {% csrf_token %}
         <div class="row">
           <label for="nome">Nome</label>
-          <input type="text" id="nome" name="nome">
+          {{ form.name }}
         </div>
         <div class="row">
           <label for="email">Email</label>
-          <input type="text" id="email" name="email">
+          {{ form.email }}
         </div>
         <div class="row">
+            <label for="mensagem">Assunto</label>
+            {{ form.subject }}
+          </div>
+        <div class="row">
           <label for="mensagem">Mensagem</label>
-          <textarea id="mensagem" name="mensagem"></textarea>
+          {{ form.message }}
         </div>
         <div class="row">
           <input type="submit" value="Enviar">
