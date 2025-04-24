@@ -1,12 +1,56 @@
 {% extends 'portfolio/partials/base.html' %}
+{% load static %}
 {% block titulo %}Home | {% endblock %}
   {% block conteudo %}
-    <div class="main-content main-content-list container">
-      {% include 'portfolio/partials/product.html' %}
-      {% include 'portfolio/partials/product.html' %}
-      {% include 'portfolio/partials/product.html' %}
-      {% include 'portfolio/partials/product.html' %}
-      {% include 'portfolio/partials/product.html' %}
-      {% include 'portfolio/partials/product.html' %}
+    <!--<div class="main-content main-content-list container">-->
+      <!--<h1 id="it">Ilustração tradicional</h1>-->
+    <div class="clearfix">
+        <div class="img-container">
+        <img src="{% static 'portfolio/img/anjos.png' %}" alt="anjos" style="width:100%">
+        </div>
+        <div class="img-container">
+        <img src="{% static 'portfolio/img/perolas.png' %}" alt="pérolas" style="width:100%">
+        </div>
+        <div class="img-container">
+        <img src="{% static 'portfolio/img/kPOP.png' %}" alt="mulher" style="width:100%">
+        </div>
+        <div class="img-container">
+       <img src="{% static 'portfolio/img/florzinhas.png' %}" alt="Campo Florido" style="width:100%">
+        </div>
+        <div class="img-container">
+        <img src="{% static 'portfolio/img/onça.png' %}" alt="onça" style="width:100%">
+        </div>
+        <div class="img-container">
+        <img src="{% static 'portfolio/img/sapinho%20um%20a%20um.png' %}" alt="Rã verde" style="width:100%">
+        </div>
     </div>
+       
+    <h1 id="it">Ilustração digital</h1>
+    <div class="clearfix">
+        <div class="img-container">
+        <img src="{% static 'portfolio/img/tbv.png' %}" alt="tvhead" style="width:100%">
+        </div>
+        <div class="img-container">
+        <img src="{% static 'portfolio/img/redraw.png' %}" alt="yukito" style="width:100%">
+        </div>
+        <div class="img-container">
+        <img src="{% static 'portfolio/img/80%20floor.png' %}" alt="80º andar" style="width:100%">
+        </div>
+        <div class="img-container">
+       <img src="{% static 'portfolio/img/dragon.jpg' %}" alt="dragão" style="width:100%">
+        </div>
+        <div class="img-container">
+        <img src="{% static 'portfolio/img/novo.png' %}" alt="monstro" style="width:100%">
+        </div>
+        <div class="img-container">
+        <img src="{% static 'portfolio/img/tamagoshi.png' %}" alt="tamagoshi" style="width:100%">
+        </div>
+    </div>
+      <!--{% include 'portfolio/partials/product.html' %}
+      {% include 'portfolio/partials/product.html' %}
+      {% include 'portfolio/partials/product.html' %}
+      {% include 'portfolio/partials/product.html' %}
+      {% include 'portfolio/partials/product.html' %}
+      {% include 'portfolio/partials/product.html' %}-->
+    <!--</div> -->
   {% endblock %}

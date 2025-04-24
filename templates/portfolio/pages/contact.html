@@ -1,0 +1,43 @@
+{% extends 'portfolio/partials/base.html' %}
+{% load static %}
+{% block titulo %}Sobre | {% endblock %}
+  {% block conteudo %}
+<h1>Contato</h1>
+
+<div class="eu">
+    <img id="demo" src="{% static 'portfolio/img/sakura%20razy.png' %}" alt="Eu">
+    <div class="sobre"><p>
+
+    razgarel@gmail.com<br><br>
+    (41)99114-3614<br><br>
+    Entre em contato!<br><br>
+    <br></p>
+    </div>
+    </div>
+
+    <h1>Mande uma mensagem!</h1>
+
+    <div class="form-image-wrapper">
+      <img class="side-image" src="{% static 'portfolio/img/raz.png' %}" alt="Imagem esquerda">
+    
+      <form action="processa-form.php" target="_blank" method="post" class="formulario">
+        <div class="row">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome">
+        </div>
+        <div class="row">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email">
+        </div>
+        <div class="row">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem"></textarea>
+        </div>
+        <div class="row">
+          <input type="submit" value="Enviar">
+        </div>
+      </form>
+    
+      <img class="side-image" src="{% static 'portfolio/img/sit%20razy.png' %}" alt="Imagem direita">
+    </div>
+    {% endblock %}

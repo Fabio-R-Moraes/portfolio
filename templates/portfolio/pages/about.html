@@ -1,0 +1,35 @@
+{% extends 'portfolio/partials/base.html' %}
+{% load static %}
+{% block titulo %}Sobre | {% endblock %}
+  {% block conteudo %}
+  <h1>Sobre</h1>
+  <div class="eu">
+  <img id="foto" src="{% static 'portfolio/img/WhatsApp%20Image%202025-03-16%20at%2014.56.43.jpeg' %}" alt="Eu">
+  <div class="sobre"><p>
+    Sou ilustradora digital e tradicional, faço comissões de <br>
+    desenho digital e no momento estou cursando design visual<br>
+    na universidade positivo. Faço aulas de desenho tradicional<br>
+  a três anos.<br>
+  Tenho interesse em áreas da arte e do design e estou sempre<br>
+  aberta a novas experiências e aprendizados. Trabalho bem em<br>
+  equipe, sou organizada e criativa em uma busca constante<br>
+  pelo conhecimento. Apaixonada por inspirar pessoas com a<br>
+  minha arte.<br></p>
+  </div>
+  </div>
+  
+  <h1>Objetivos de carreira</h1>
+  <p>Ampliar minha áre de atuação, testar novas áreas como design de embalagem, UI/UX, animação, ect.<br>
+  Também criar uma presença online consistente, crescer minhas redes sociais, instagram, twitter.<br>
+  E continuar a aprender mais sobre novas técnicas e o mundo do design.<br></p>
+  
+  <h1>Habilidades</h1>
+  
+  <div class="social-row1">
+      <img src="{% static 'portfolio/img/aftereffects.png' %}" alt="aftereffects" class="social-icon1 img1">
+      <img src="{% static 'portfolio/img/ilustrator.png' %}" alt="illustrator" class="social-icon1 img2">
+      <img src="{% static 'portfolio/img/indesign.png' %}" alt="indesign" class="social-icon1 img3">
+      <img src="{% static 'portfolio/img/figma.png' %}" alt="figma" class="social-icon1 img4">
+      <img src="{% static 'portfolio/img/photoshop.png' %}" alt="photoshop" class="social-icon1 img5">
+  </div>
+  {% endblock %}

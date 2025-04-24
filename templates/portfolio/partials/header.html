@@ -1,4 +1,32 @@
-<header class="main-header-container">
+{% load static %}
+<div class="header">
+  <div class="parallax">
+    <img src="{% static 'portfolio/img/logo%20outlinebranco.png' %}" alt="logo" id="logo">
+  </div>
+
+    <div class="topnav nav-estilo1">
+
+        <div class="topnav-left">
+         <a href="{% url 'index' %}">Portfólio</a>
+        </div>
+        
+        <div class="topnav-left">
+         <a href="{% url 'about' %}">Sobre</a>
+        </div>
+        
+        <div class="topnav-right">
+         <a href="{% url 'contact' %}">Contato</a>
+        </div>
+
+        <div class="topnav-right">
+            <a href="{% url 'curriculum' %}">Curriculum Vitae</a>
+           </div>
+      </div>
+</div>
+
+
+
+<!--<header class="main-header-container">
     <div class="main-header-container">
       <h1>
         <a class="main-logo" href="/">
@@ -7,4 +35,4 @@
         </a>
       </h1>
     </div>
-</header> 
+</header> -->
