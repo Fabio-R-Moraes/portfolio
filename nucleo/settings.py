@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-5y9iyfcz4+=ub(y(57mp=v9b2z5-l3@#*n7^3@(=-coexe#eju'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -127,3 +127,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #Configurações de e-mail
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' #Simula o envio de e-mail
+
+EMAIL_HOST = 'smtp.office365.com'
+EMAIL_HOST_USER = 'fmoraes05@outlook.com'
+EMAIL_PORT = 587
+EMAIL_USER_TSL = True
+EMAIL_PASSWORD = 'Flum1n3ns3#'
+DEFAULT_FROM_EMAIL = 'fmoraes05@outlook.com'
