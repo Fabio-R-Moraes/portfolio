@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .forms import contatoForm
 from django.contrib import messages
+#from django.core.mail import EmailMessage
 
 def index(request):
     return render(request, "portfolio/index.html")
@@ -33,6 +34,15 @@ def contact(request):
             print(f'Mensage: {mensagem}')
 
             messages.success(request, 'E-mail enviado com sucesso!!!')
+
+            #Configuração para enviar e-mail em produção
+            #mail = EmailMessage(
+            #    subject = assunto,
+            #    body = nome + '\n' + email + '\n\n' + mensagem,
+            #    from_email= 'no-reply@mail.com',
+            #    to = ['fmoraes05@gmail.com', 'fmoraes05@outlook.com'],
+            #)
+            #mail.send()
 
             form = contatoForm()
         else:
